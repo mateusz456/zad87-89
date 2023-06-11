@@ -30,16 +30,31 @@ Przykład ->pokaz formularza
  {
  alert("OK!");
  }
-   function Test(form)
+function test_pesel(form)
  {
- if (form.txt1.value == "")
+ if (form.txt3.value.length == 11)
  {
- alert("Podaj ciąg znaków!")
+var l1= parseInt (form. pesel_kowalski.value.substring(0,1));
+var l2=parseInt(form. pesel_kowalski.value.substring(1,2));
+……………………………………………………………………………………………..
+var lk=(1*l1+3*l2+7*l3+………………………);
+var ck=………………;
+var ckk=…………….;
+if (?????????????????????????)
+{
+alert("PESEL prawidłowy!");
+}
+else
+{
+alert("PESEL nieprawidłowy!");
+}
  }
- else
+else
  {
- alert("Cześć "+form.txt1.value+" ! Informacja poprawna!");
+alert("PESEL nieprawidłowy!");
  }
+ }
+
  }
 </script>
 </head>
@@ -59,6 +74,11 @@ Wpisz adres swojej poczty elektronicznej:<br>
 Wpisz numer PESEL:<br>
 <input type="text" name="pesel_kowalski">
 <input type="button" name="button3" value="Test" onClick="test_pesel(this.form)">
+  </form>
+ <form name="NIP">
+Wpisz NIP:<br>
+<input type="text" name="NIP">
+<input type="button" name="button3" value="Test" onClick="NIP(this.form)">
   </form>
 <h3>Czy podoba Ci się ta strona ?</h3>
  <input name="choice" type="radio" value="1">Tak<BR>
